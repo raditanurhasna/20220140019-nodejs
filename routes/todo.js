@@ -10,7 +10,7 @@ let todos = [
   },
 ];
 
-//Endpoint untuk menndapatkan data
+//Endpoint untuk mendapatkan data
 router.get('/',(req, res) => {res.json(todos); });
 
 //Endpoint untuk menambahkan tugas
