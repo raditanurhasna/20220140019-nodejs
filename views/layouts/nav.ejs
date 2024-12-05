@@ -1,29 +1,34 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+  <div class="container-fluid">
+    <!-- Logo and Toggler -->
+    <div class="d-flex align-items-center justify-content-between w-100">
+      <a class="navbar-brand" href="#">
+        <img class="rounded-circle" src="https://aapm.co.id/assets/images/business/aapm-large-orange.svg" alt="Logo" width="50" height="50" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="todo-view">Todo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-          <li class="nav-item">
-            <form action="/logout" method="POST">
-              <button class="btn btn-link nav-link" type="submit">Logout</button>
-            </form>
-          </li>
-        </ul>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex justify-content-center flex-grow-1">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/todo-view">Todo</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
+      <!-- Sign Out Button -->
+      <form class="d-flex justify-content-end mt-2 mt-lg-0" role="search" action="/logout" method="POST">
+        <button class="btn btn-danger btn-out" type="submit">Sign Out</button>
+      </form>
     </div>
-  </nav>
+  </div>
+</nav>
